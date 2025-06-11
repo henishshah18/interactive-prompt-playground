@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 from tabulate import tabulate
+from datetime import datetime
 
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
@@ -43,4 +44,10 @@ for param in params:
     param_str = ", ".join(f"{k}={v}" for k, v in param.items())
     results.append([param_str, response.choices[0].message.content.strip()])
 
-print(tabulate(results, headers=["Modified Param", "Response"], tablefmt="grid"))
+# Create and display the table
+table = tabulate(results, headers=["Modified Param", "Response"], tablefmt="grid")
+print(table)
+
+# Save to output.txt
+with open("output.txt", "w", encoding="utf-8") as f:
+    f.write(table)

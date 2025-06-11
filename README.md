@@ -60,13 +60,8 @@ The playground tests various combinations of the following parameters:
 - System prompt configured for marketing-focused responses
 
 ### Output Format
-- Results are displayed in a clean, grid-formatted table
+- Results are displayed in a clean, grid-formatted table in a separate file called output.txt
 - Each response shows the modified parameter and the corresponding generated content
 - Uses the `tabulate` library for clear visualization of results
-
-## Example Output
-The script will output a grid table showing:
-- The parameter that was modified from the base configuration
-- The corresponding marketing description generated with those parameters
 
 This allows for easy comparison of how different parameters affect the model's output. 

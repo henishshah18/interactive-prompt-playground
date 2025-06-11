@@ -1,0 +1,3 @@
+Changing the temperature clearly affected the tone of the responses. At temperature=0.0, the descriptions were straightforward, sticking to familiar marketing language. As the temperature increased to 0.7 and 1.2, 
+the outputs became more expressive and varied, using bolder language and adding a bit of flair. The max_tokens parameter clearly affects response length, with 50 tokens producing an incomplete description, while 150-300 tokens allow for more comprehensive and complete answer. Presence and frequency penalties have subtle effects in my opinion. Higher presence_penalty (1.5) encourages more diverse topic coverage, while higher frequency_penalty (1.5) reduces repetition of phrases like "must-have" and creates more concise
+descriptions. 
